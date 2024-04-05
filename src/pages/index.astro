@@ -1,0 +1,2243 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Image from '~/components/common/Image.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <div>
+    <header class="page-head">
+      <div class="page-cover__container">
+        <div class="page-cover blog-bubble-mask">
+          <div class="page-cover__image">
+            <Image
+              src={'~/assets/images/almadragos.webp'}
+              class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+              widths={[400, 900]}
+              width={400}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt={'post.title'}
+              aspectRatio="16:9"
+              layout="cover"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+        </div><div class="home-cover__content">
+          <div class="home-cover__content-container">
+            <div class="salt-icon__container">
+              <span class="planning-link__link-icon salt-icon salt-icon--shaka"></span>
+            </div><p>
+              <em
+                ><em
+                  >Hi, we’re Nick &amp; Hannah from Salt in our Hair.<br />We create inspiring&nbsp;<a
+                    href="https://www.alma-calatoreste.com/travel-blog/"
+                    target="_blank"
+                    rel="noreferrer noopener">travel blogs</a
+                  >&nbsp;about the world’s most beautiful places to make planning your holiday a piece of cake!</em
+                ></em
+              >
+            </p><div class="destination-text">
+              <p>
+                <em>
+                  <span class="visible-desktop"
+                    >Choose a <span class="destination-btn"
+                      >destination here<svg class="icon icon-arrow-small"
+                        ><use xlink:href="#icon-arrow-small"></use></svg
+                      ></span
+                    > to start your journey.</span
+                  >
+                  <span class="visible-mobile"
+                    ><span
+                      class="destination-btn"
+                      ontouchend="document.documentElement.classList.add('page-nav--hasbeenopen', 'page-nav--active', 'page-locked');"
+                      >Choose a destination<svg class="icon icon-arrow-small"
+                        ><use xlink:href="#icon-arrow-small"></use></svg
+                      ></span
+                    ></span
+                  >
+                </em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><div class="page-head__container">
+        <div class="logo__container">
+          <a href="https://www.alma-calatoreste.com/" title="Salt in our Hair Travel Blog" class="logo"></a>
+          <span class="logo logo--shadow"></span>
+        </div>
+      </div>
+    </header>
+    <main class="page-content design2023" id="maincontent">
+      <section class="top-posts">
+        <a
+          class="article-block article-block--wcat"
+          href="https://www.alma-calatoreste.com/mexico/holbox-mexico/"
+          title="8 Unmissable Things to do in Holbox, Mexico"
+          ><div class="article-block__content">
+            <div class="salt-icon__container">
+              <span class="planning-link__link-icon salt-icon salt-icon--world"></span>
+            </div><article class="article-block__content-link">
+              <h5>Mexico</h5><h2 class="article-block__title">8 Unmissable Things to do in Holbox, Mexico</h2>
+            </article>
+          </div><div class="article-block__image">
+            <div class="article-block__image-link">
+              <Image
+                src={'~/assets/images/almadragos.webp'}
+                class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                widths={[400, 900]}
+                width={400}
+                sizes="(max-width: 900px) 400px, 900px"
+                alt={'post.title'}
+                aspectRatio="16:9"
+                layout="cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </a><div class="top-posts__ad visible-mobile"><div class="content_mobile_hint"></div></div>
+        <a
+          class="article-block article-block--wcat"
+          href="https://www.alma-calatoreste.com/bali/bali-travel-guide/"
+          title="Bali Travel Guide: The Ultimate 3-Week Itinerary"
+          ><div class="article-block__content">
+            <div class="salt-icon__container">
+              <span class="planning-link__link-icon salt-icon salt-icon--tour"></span>
+            </div><article class="article-block__content-link">
+              <h5>Bali</h5><h2 class="article-block__title">Bali Travel Guide: The Ultimate 3-Week Itinerary</h2>
+            </article>
+          </div><div class="article-block__image">
+            <div class="article-block__image-link">
+              <Image
+                src={'~/assets/images/almadragos.webp'}
+                class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                widths={[400, 900]}
+                width={400}
+                sizes="(max-width: 900px) 400px, 900px"
+                alt={'post.title'}
+                aspectRatio="16:9"
+                layout="cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </a>
+        <a
+          class="article-block article-block--wcat"
+          href="https://www.alma-calatoreste.com/croatia/hvar/"
+          title="9 Best Things to do in Hvar, Croatia"
+          ><div class="article-block__content">
+            <div class="salt-icon__container">
+              <span class="planning-link__link-icon salt-icon salt-icon--flight"></span>
+            </div><article class="article-block__content-link">
+              <h5>Croatia</h5><h2 class="article-block__title">9 Best Things to do in Hvar, Croatia</h2>
+            </article>
+          </div><div class="article-block__image">
+            <div class="article-block__image-link">
+              <Image
+                src={'~/assets/images/almadragos.webp'}
+                class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                widths={[400, 900]}
+                width={400}
+                sizes="(max-width: 900px) 400px, 900px"
+                alt={'post.title'}
+                aspectRatio="16:9"
+                layout="cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </a>
+      </section><section class="wheretonext">
+        <div class="wheretonext__container">
+          <div class="visible-mobile wheretonext__mtitle">Where to next?</div><ul
+            class="wheretonext__list lazyload-scrollx"
+          >
+            <li class="wheretonext__title-container visible-desktop">
+              <div class="wheretonext__title">Where to</div><div class="wheretonext__title wheretonext__title--l">
+                next?
+              </div>
+            </li><li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="italy/" title="Italy">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2020/05/23120217/alma-calatoreste-italy-180x180.jpg"
+                  alt="Italy"
+                  width="180"
+                  height="180"
+                />
+                Italy
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="sri-lanka/" title="Sri Lanka">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2020/05/23120150/alma-calatoreste-sri-lanka-180x180.jpg"
+                  alt="Sri Lanka"
+                  width="180"
+                  height="180"
+                />
+                Sri Lanka
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="croatia/" title="Croatia">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2023/07/26165302/croatia-brac-34-270x180.jpg"
+                  alt="Croatia"
+                  width="270"
+                  height="180"
+                />
+                Croatia
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="thailand/" title="Thailand">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2020/02/23122934/ultimate-travel-guide-koh-lipe-island-270x180.jpg"
+                  alt="Thailand"
+                  width="270"
+                  height="180"
+                />
+                Thailand
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="mexico/" title="Mexico">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2024/01/19172252/tulum-mexico-7-1-120x180.jpg"
+                  alt="Mexico"
+                  width="120"
+                  height="180"
+                />
+                Mexico
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="japan/" title="Japan">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2024/01/04172153/Japan-Tokyo-16-270x180.jpg"
+                  alt="Japan"
+                  width="270"
+                  height="180"
+                />
+                Japan
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="greece/" title="Greece">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2021/06/02081918/santorini-greece-oia-144x180.jpg"
+                  alt="Greece"
+                  width="144"
+                  height="180"
+                />
+                Greece
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="bali/" title="Bali">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2020/05/23115725/bali-alma-calatoreste-180x180.jpg"
+                  alt="Bali"
+                  width="180"
+                  height="180"
+                />
+                Bali
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="morocco/" title="Morocco">
+                <img
+                  class="wheretonext__link-img"
+                  src="https://static.alma-calatoreste.com/wp-content/uploads/2017/04/23115129/best-restaurant-marrakech-morocco-147x180.jpg"
+                  alt="Morocco"
+                  width="147"
+                  height="180"
+                />
+                Morocco
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="spain/" title="Spain">
+                <img
+                  class="wheretonext__link-img"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiLz4="
+                  tempsrc="https://static.alma-calatoreste.com/wp-content/uploads/2019/07/23133351/valencia-city-spain-139x180.jpg"
+                  alt="Spain"
+                  width="139"
+                  height="180"
+                />
+                Spain
+              </a>
+            </li>
+            <li class="page-nav__subitem">
+              <a class="page-nav__sub-link" href="jordan/" title="Jordan">
+                <img
+                  class="wheretonext__link-img"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiLz4="
+                  tempsrc="https://static.alma-calatoreste.com/wp-content/uploads/2024/01/21200018/petra-jordan-13-124x180.jpg"
+                  alt="Jordan"
+                  width="124"
+                  height="180"
+                />
+                Jordan
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section><section class="home-ad visible-desktop"><div class="content_desktop_hint"></div></section><section
+        class="sustainable"
+      >
+        <div class="sustainable__container">
+          <div class="sustainable__left">
+            <div class="sustainable__subtitle">It's easy to do better</div><div class="sustainable__title">
+              Sustainable <br />Travel
+            </div><p class="sustainable__excerpt">
+              Sustainable travel means traveling slow, with different transport, packing eco-friendly, stay local and
+              much more!
+            </p>
+            <a href="/sustainability/" class="btn">Sustainable travel tips</a>
+          </div><div class="sustainable__right">
+            <div class="sustainable__articles">
+              <a
+                class="article-text-block"
+                href="https://www.alma-calatoreste.com/tips/reduce-plastic-travel/"
+                title="13 Easy Tips to Reduce Plastic & Travel Plastic-Free"
+                ><div class="article-text-block__image">
+                  <div class="article-text-block__image-link">
+                    <Image
+                      src={'~/assets/images/almadragos.webp'}
+                      class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                      widths={[400, 900]}
+                      width={400}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={'post.title'}
+                      aspectRatio="16:9"
+                      layout="cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div><div class="article-text-block__content">
+                  <article class="article-text-block__content-link">
+                    <h4 class="article-text-block__title">13 Easy Tips to Reduce Plastic &amp; Travel Plastic-Free</h4>
+                  </article>
+                </div></a
+              ><a
+                class="article-text-block"
+                href="https://www.alma-calatoreste.com/tips/sustainable-travel/"
+                title="Sustainable Travel Tips – 10 Easy Tips for You to Use Now!"
+                ><div class="article-text-block__image">
+                  <div class="article-text-block__image-link">
+                    <Image
+                      src={'~/assets/images/almadragos.webp'}
+                      class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                      widths={[400, 900]}
+                      width={400}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={'post.title'}
+                      aspectRatio="16:9"
+                      layout="cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div><div class="article-text-block__content">
+                  <article class="article-text-block__content-link">
+                    <h4 class="article-text-block__title">
+                      Sustainable Travel Tips – 10 Easy Tips for You to Use Now!
+                    </h4>
+                  </article>
+                </div></a
+              ><a
+                class="article-text-block"
+                href="https://www.alma-calatoreste.com/tips/how-to-become-vegetarian/"
+                title="How to Become Vegetarian: 8 Super Simple Steps"
+                ><div class="article-text-block__image">
+                  <div class="article-text-block__image-link">
+                    <Image
+                      src={'~/assets/images/almadragos.webp'}
+                      class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                      widths={[400, 900]}
+                      width={400}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={'post.title'}
+                      aspectRatio="16:9"
+                      layout="cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div><div class="article-text-block__content">
+                  <article class="article-text-block__content-link">
+                    <h4 class="article-text-block__title">How to Become Vegetarian: 8 Super Simple Steps</h4>
+                  </article>
+                </div></a
+              >
+            </div>
+            <a href="/sustainability/" class="sustainable__articles-all">See all tips about sustainable travel</a>
+          </div>
+        </div>
+      </section><section class="home-ad home-ad--1 visible-mobile">
+        <div class="content_mobile_hint"></div>
+      </section><section class="handpicked">
+        <div class="handpicked__container">
+          <div class="handpicked__left">
+            <a
+              class="article-text-block"
+              href="https://www.alma-calatoreste.com/bali/bamboo-houses-bali/"
+              title="8 Best Bamboo Houses in Bali to Stay at"
+              ><div class="article-text-block__image">
+                <div class="article-text-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div><div class="article-text-block__content">
+                <article class="article-text-block__content-link">
+                  <h4 class="article-text-block__title">8 Best Bamboo Houses in Bali to Stay at</h4>
+                </article>
+              </div></a
+            ><a
+              class="article-text-block"
+              href="https://www.alma-calatoreste.com/italy/sicily-road-trip/"
+              title="Sicily Road Trip: Ultimate 2-Week Itinerary"
+              ><div class="article-text-block__image">
+                <div class="article-text-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div><div class="article-text-block__content">
+                <article class="article-text-block__content-link">
+                  <h4 class="article-text-block__title">Sicily Road Trip: Ultimate 2-Week Itinerary</h4>
+                </article>
+              </div></a
+            ><a
+              class="article-text-block"
+              href="https://www.alma-calatoreste.com/sri-lanka/sigiriya-lion-rock/"
+              title="Sigiriya Lion Rock: Climb the World-Famous Landmark"
+              ><div class="article-text-block__image">
+                <div class="article-text-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div><div class="article-text-block__content">
+                <article class="article-text-block__content-link">
+                  <h4 class="article-text-block__title">Sigiriya Lion Rock: Climb the World-Famous Landmark</h4>
+                </article>
+              </div></a
+            ><a
+              class="article-text-block"
+              href="https://www.alma-calatoreste.com/greece/kefalonia-greece/"
+              title="12 Best Things to do in Kefalonia, Greece"
+              ><div class="article-text-block__image">
+                <div class="article-text-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div><div class="article-text-block__content">
+                <article class="article-text-block__content-link">
+                  <h4 class="article-text-block__title">12 Best Things to do in Kefalonia, Greece</h4>
+                </article>
+              </div></a
+            >
+          </div><div class="handpicked__right scroller">
+            <a
+              class="article-block article-block--high"
+              href="https://www.alma-calatoreste.com/greece/paros-greece/"
+              title="Paros"
+              ><div class="article-block__content">
+                <article class="article-block__content-link">
+                  <h3 class="article-block__title">Paros</h3><h4 class="article-block__subtitle">
+                    <svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Greece
+                  </h4>
+                </article>
+              </div><div class="article-block__image">
+                <div class="article-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </a><a
+              class="article-block article-block--high"
+              href="https://www.alma-calatoreste.com/bali/sidemen-bali/"
+              title="Sidemen"
+              ><div class="article-block__content">
+                <article class="article-block__content-link">
+                  <h3 class="article-block__title">Sidemen</h3><h4 class="article-block__subtitle">
+                    <svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Bali
+                  </h4>
+                </article>
+              </div><div class="article-block__image">
+                <div class="article-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </a><a
+              class="article-block article-block--high"
+              href="https://www.alma-calatoreste.com/croatia/rovinj-croatia/"
+              title="Rovinj"
+              ><div class="article-block__content">
+                <article class="article-block__content-link">
+                  <h3 class="article-block__title">Rovinj</h3><h4 class="article-block__subtitle">
+                    <svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Croatia
+                  </h4>
+                </article>
+              </div><div class="article-block__image">
+                <div class="article-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </a><a
+              class="article-block article-block--high"
+              href="https://www.alma-calatoreste.com/mexico/tulum/"
+              title="Tulum"
+              ><div class="article-block__content">
+                <article class="article-block__content-link">
+                  <h3 class="article-block__title">Tulum</h3><h4 class="article-block__subtitle">
+                    <svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Mexico
+                  </h4>
+                </article>
+              </div><div class="article-block__image">
+                <div class="article-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </a><a
+              class="article-block article-block--high"
+              href="https://www.alma-calatoreste.com/jordan/wadi-rum/"
+              title="Wadi Rum"
+              ><div class="article-block__content">
+                <article class="article-block__content-link">
+                  <h3 class="article-block__title">Wadi Rum</h3><h4 class="article-block__subtitle">
+                    <svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Jordan
+                  </h4>
+                </article>
+              </div><div class="article-block__image">
+                <div class="article-block__image-link">
+                  <Image
+                    src={'~/assets/images/almadragos.webp'}
+                    class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={'post.title'}
+                    aspectRatio="16:9"
+                    layout="cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section><section class="home-ad home-ad--2"><div class="content_hint"></div></section><section class="about">
+        <div class="about-image">
+          <Image
+            src={'~/assets/images/almadragos.webp'}
+            class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+            widths={[400, 900]}
+            width={400}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt={'post.title'}
+            aspectRatio="16:9"
+            layout="cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div><div class="about-content">
+          <div class="about-content__title" data-content="ABOUT">ABOUT</div><div class="about-content__subtitle">
+            Hannah &amp; Nick
+          </div><p class="about-content__text">
+            We're Hannah &amp; Nick, two creatives that run a 'travel content creation' company named Salt in our Hair.
+            We inspire people to travel via our travel guides, photography and videography. <br />
+            <a href="/about-us/" target="_blank">More about us</a> / <a href="/work-with-us/" target="_blank"
+              >Work with us</a
+            >
+          </p><div class="socials">
+            <div class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.instagram.com/alma-calatoreste/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram Salt in our Hair"
+              >
+                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+              </a>
+            </div><div class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.youtube.com/c/alma-calatoreste?sub_confirmation=1"
+                target="_blank"
+                rel="noopener"
+                aria-label="Youtube Salt in our Hair"
+              >
+                <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+              </a>
+            </div><div class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.pinterest.com/alma-calatoreste/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Pinterest Salt in our Hair"
+              >
+                <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+              </a>
+            </div><div class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.facebook.com/alma-calatoreste/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook Salt in our Hair"
+              >
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <nav class="page-nav page-nav--small page-nav--sticked page-nav--sticked--active page-nav--sticked--visible">
+      <div class="page-nav__container">
+        <ul class="page-nav__list page-nav__list--menu">
+          <li class="page-nav__item page-nav__item--home visible-desktop">
+            <a
+              class="page-nav__link"
+              href="https://www.alma-calatoreste.com/"
+              title="Salt in our Hair Travel Blog"
+              aria-label="Salt in our Hair Travel Blog"
+              ><figure class="logo"></figure>
+            </a>
+          </li><li class="page-nav__item visible-mobile">
+            <a class="page-nav__link" href="https://www.alma-calatoreste.com/" title="Home">Home</a>
+          </li><li class="page-nav__item visible-desktop">
+            <a
+              class="page-nav__link page-nav__link--sub page-nav__link--destinations page-nav__link--has-submenu page-nav__link--largesubmenu"
+              href="https://www.alma-calatoreste.com/travel-blog/"
+              title="Travel blogs"
+              >Destinations<svg class="icon icon-arrow-small"><use xlink:href="#icon-arrow-small"></use></svg></a
+            >
+          </li><li class="page-nav__item visible-desktop">
+            <a
+              class="page-nav__link page-nav__link--sub page-nav__link--tips page-nav__link--has-submenu page-nav__link--largesubmenu"
+              href="https://www.alma-calatoreste.com/tips/"
+              title="Tips"
+              >Travel Tips<svg class="icon icon-arrow-small"><use xlink:href="#icon-arrow-small"></use></svg></a
+            >
+          </li><li class="page-nav__item visible-desktop">
+            <a
+              class="page-nav__link page-nav__link--sub page-nav__link--planning page-nav__link--has-submenu page-nav__link--largesubmenu"
+              title="Travel planning"
+              href="https://www.alma-calatoreste.com/travel-advice/"
+              >Planning<svg class="icon icon-arrow-small"><use xlink:href="#icon-arrow-small"></use></svg></a
+            >
+          </li><li class="page-nav__item">
+            <a
+              class="page-nav__link page-nav__link--has-submenu"
+              href="https://www.alma-calatoreste.com/about-us/"
+              title="About us">About us</a
+            ><div class="page-nav__item-subcontainer">
+              <ul class="page-nav__item-sublist">
+                <li class="page-nav__item page-nav__item-subitem">
+                  <a
+                    class="page-nav__link"
+                    href="https://www.alma-calatoreste.com/about-us/"
+                    title="About Salt in our Hair">Our story</a
+                  >
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a
+                    class="page-nav__link"
+                    href="https://www.alma-calatoreste.com/work-with-us/"
+                    title="Work with Salt in our Hair">Work with us</a
+                  >
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a
+                    class="page-nav__link"
+                    href="https://www.instagram.com/alma-calatoreste"
+                    target="_blank"
+                    title="Instagram Salt in our Hair"
+                    >Instagram <svg class="icon icon-external"><use xlink:href="#icon-external"></use></svg></a
+                  >
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a
+                    class="page-nav__link"
+                    href="https://www.youtube.com/alma-calatoreste"
+                    target="_blank"
+                    title="Youtube Salt in our Hair"
+                    >Youtube <svg class="icon icon-external"><use xlink:href="#icon-external"></use></svg></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li><li class="page-nav__item">
+            <a
+              class="page-nav__link page-nav__link--has-submenu"
+              href="https://www.alma-calatoreste.com/shop/"
+              title="Salt in our Hair Shop"
+              >Shop <svg class="icon icon-shopcart"><use xlink:href="#icon-shopcart"></use></svg></a
+            ><div class="page-nav__item-subcontainer page-nav__item-subcontainer--shop">
+              <ul class="page-nav__item-sublist">
+                <li class="page-nav__item page-nav__item-subitem">
+                  <a
+                    class="page-nav__link"
+                    href="https://www.alma-calatoreste.com/shop/mobile-video-filters/"
+                    title="Mobile video filters">Mobile Video Filters</a
+                  >
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a class="page-nav__link" href="https://www.alma-calatoreste.com/shop/presets/" title="Lightroom Presets"
+                    >Photo Filters (Presets)</a
+                  >
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a
+                    class="page-nav__link"
+                    href="https://www.alma-calatoreste.com/shop/google-maps/"
+                    title="Google Maps Locations">Google Maps Locations</a
+                  >
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a class="page-nav__link" href="https://www.alma-calatoreste.com/shop/ebooks/" title="Ebooks">Ebooks</a>
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a class="page-nav__link" href="https://www.alma-calatoreste.com/shop/prints/" title="Prints">Prints</a>
+                </li>
+              </ul><div class="page-nav__subcontainer-button">
+                <a class="page-nav__link" href="https://www.alma-calatoreste.com/cart/" title="Cart"
+                  >Cart <svg class="icon icon-shopcart"><use xlink:href="#icon-shopcart"></use></svg></a
+                ><a class="page-nav__link" href="https://www.alma-calatoreste.com/my-account/" title="Your account">
+                  Login
+                  <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg></a
+                >
+              </div>
+            </div>
+          </li>
+        </ul><ul class="page-nav__list page-nav__item--search">
+          <li class="page-nav__item visible-desktop">
+            <form role="search" class="search-form" method="get" action="https://www.alma-calatoreste.com">
+              <label for="search-input-desktop" class="search-form__label">
+                <input
+                  id="search-input-desktop"
+                  class="search-form__input"
+                  name="s"
+                  type="text"
+                  placeholder="Search articles …"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Search articles …'"
+                />
+                <span class="search-form__background"></span>
+              </label>
+              <button type="submit" class="search-form__btn" title="Search Blogs">
+                <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+              </button>
+            </form>
+          </li><li class="page-nav__item visible-mobile">
+            <button
+              type="button"
+              class="page-nav__link search-form-mobile__btn page-nav__link--has-submenu"
+              title="Search Blogs"
+            >
+              <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+            </button><div class="page-nav__item-subcontainer">
+              <ul class="page-nav__item-sublist">
+                <li class="page-nav__item page-nav__item-subitem">
+                  <form role="search" class="search-form" method="get" action="https://www.alma-calatoreste.com">
+                    <label for="search-input" class="search-form__label">
+                      <input
+                        id="search-input"
+                        class="search-form__input"
+                        name="s"
+                        type="text"
+                        placeholder="Type here to search for articles …"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Type here to search for articles …'"
+                      />
+                      <span class="search-form__background"></span>
+                    </label>
+                    <button type="submit" class="search-form__btn" title="Search Blogs">
+                      <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="page-nav__item page-nav__item--button page-nav__item--language">
+            <a class="page-nav__link page-nav__link--has-submenu" href="#" title="Switch language"
+              >en<svg class="icon icon-arrow-small"><use xlink:href="#icon-arrow-small"></use></svg></a
+            ><div class="page-nav__item-subcontainer">
+              <ul class="page-nav__item-sublist">
+                <li class="page-nav__item page-nav__item-subitem">
+                  <a class="page-nav__link" href="https://www.alma-calatoreste.com/">English</a>
+                </li><li class="page-nav__item page-nav__item-subitem">
+                  <a class="page-nav__link" href="https://www.alma-calatoreste.com/nl/">Nederlands</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="page-nav__item visible-desktop">
+            <div class="socials">
+              <div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.instagram.com/alma-calatoreste/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram Salt in our Hair"
+                >
+                  <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                </a>
+              </div><div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.youtube.com/c/alma-calatoreste?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="YouTube Salt in our Hair"
+                >
+                  <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+                </a>
+              </div><div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.pinterest.com/alma-calatoreste/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Pinterest Salt in our Hair"
+                >
+                  <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul><ul class="page-nav__list page-nav__list--maintopic visible-mobile">
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link page-nav__link--sub page-nav__link--destinations page-nav__link--has-submenu page-nav__item--topic topic-active"
+              href="https://www.alma-calatoreste.com/travel-blog/"
+              title="Travel blogs">Destinations</a
+            >
+          </li>
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link page-nav__link--sub page-nav__link--tips page-nav__link--has-submenu page-nav__item--topic"
+              href="https://www.alma-calatoreste.com/tips/"
+              title="Tips">Tips</a
+            >
+          </li>
+          <li class="page-nav__item">
+            <a
+              class="page-nav__link page-nav__link--sub page-nav__link--planning page-nav__link--has-submenu page-nav__item--topic"
+              href="https://www.alma-calatoreste.com/travel-advice/"
+              title="Planning">Planning</a
+            >
+          </li>
+        </ul>
+      </div><div class="page-nav__subcontainer">
+        <div class="page-nav__subcontainer-content page-nav__subcontainer--destinations">
+          <div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/asia/"
+                >Asia<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/bali/" title="Bali"> Bali </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/cambodia/" title="Cambodia">
+                  Cambodia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/georgia/" title="Georgia">
+                  Georgia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/india/" title="India"> India </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/indonesia/" title="Indonesia">
+                  Indonesia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/japan/" title="Japan"> Japan </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/laos/" title="Laos"> Laos </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/malaysia/" title="Malaysia">
+                  Malaysia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/maldives/" title="Maldives">
+                  Maldives
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/myanmar/" title="Myanmar">
+                  Myanmar
+                </a>
+              </li><li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link page-nav__sub-link--small"
+                  href="https://www.alma-calatoreste.com/philippines/"
+                  title="Philippines"
+                >
+                  Philippines
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/singapore/" title="Singapore">
+                  Singapore
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/sri-lanka/" title="Sri Lanka">
+                  Sri Lanka
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/thailand/" title="Thailand">
+                  Thailand
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/turkey/" title="Turkey"> Turkey </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/uzbekistan/" title="Uzbekistan">
+                  Uzbekistan
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/vietnam/" title="Vietnam">
+                  Vietnam
+                </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/africa/"
+                >Africa<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/egypt/" title="Egypt"> Egypt </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/mauritius/" title="Mauritius">
+                  Mauritius
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/morocco/" title="Morocco">
+                  Morocco
+                </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/middle-east/"
+                >Middle East<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/egypt/" title="Egypt"> Egypt </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/jordan/" title="Jordan"> Jordan </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/oman/" title="Oman"> Oman </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/turkey/" title="Turkey"> Turkey </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/europe/"
+                >Europe<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/albania/" title="Albania">
+                  Albania
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/austria/" title="Austria">
+                  Austria
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/bulgaria/" title="Bulgaria">
+                  Bulgaria
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/croatia/" title="Croatia">
+                  Croatia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link page-nav__sub-link--small"
+                  href="https://www.alma-calatoreste.com/czech-republic/"
+                  title="Czech Republic"
+                >
+                  Czech Republic
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/france/" title="France"> France </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/georgia/" title="Georgia">
+                  Georgia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/greece/" title="Greece"> Greece </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/hungary/" title="Hungary">
+                  Hungary
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/iceland/" title="Iceland">
+                  Iceland
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/italy/" title="Italy"> Italy </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/malta/" title="Malta"> Malta </a>
+              </li><li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link page-nav__sub-link--small"
+                  href="https://www.alma-calatoreste.com/netherlands/"
+                  title="Netherlands"
+                >
+                  Netherlands
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/poland/" title="Poland"> Poland </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/portugal/" title="Portugal">
+                  Portugal
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/spain/" title="Spain"> Spain </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/turkey/" title="Turkey"> Turkey </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"> Latin America </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/colombia/" title="Colombia">
+                  Colombia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/costa-rica/" title="Costa Rica">
+                  Costa Rica
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/mexico/" title="Mexico"> Mexico </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/peru/" title="Peru"> Peru </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://www.alma-calatoreste.com/travel-blog/"
+            title="Discover all travel blogs"
+            class="page-nav__subcontainer-button"
+            >All Travel Blogs<svg class="icon icon-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+          >
+        </div><div class="page-nav__subcontainer-content page-nav__subcontainer--tips">
+          <div class="page-nav__subcontainer-tiplist">
+            <strong class="page-nav__sub-continent"><div>All categories</div> </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/travel-tips/" title="Travel Tips"
+                  >Travel Tips</a
+                >
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/digital-nomad/" title="Digital Nomad"
+                  >Digital Nomad</a
+                >
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/social-media/" title="Social Media"
+                  >Social Media</a
+                >
+              </li>
+              <li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link"
+                  href="https://www.alma-calatoreste.com/sustainability/"
+                  title="Sustainable Travel">Sustainable Travel</a
+                >
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/budget/" title="Budget">Budget</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/tech/" title="Tech">Tech</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/lifestyle/" title="Lifestyle"
+                  >Lifestyle</a
+                >
+              </li>
+              <li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link"
+                  target="_blank"
+                  href="https://www.alma-calatoreste.com/go/heymondo-tm/?r="
+                  title="Travel Insurance">Travel Insurance</a
+                >
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-tipbest">
+            <strong class="page-nav__sub-continent visible-mobile"><div>Popular reads</div> </strong><div
+              class="articles-section grid-articles"
+            >
+              <a
+                class="article-block"
+                href="https://www.alma-calatoreste.com/tips/reduce-plastic-travel/"
+                title="13 Plastic Products to replace when Traveling"
+                ><div class="article-block__content">
+                  <article class="article-block__content-link">
+                    <div class="h article-block__title"><span>13 Plastic Products to replace when Traveling</span></div>
+                  </article>
+                </div><div class="article-block__image">
+                  <div class="article-block__image-link">
+                    <Image
+                      src={'~/assets/images/almadragos.webp'}
+                      class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                      widths={[400, 900]}
+                      width={400}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={'post.title'}
+                      aspectRatio="16:9"
+                      layout="cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </a>
+              <a
+                class="article-block"
+                href="https://www.alma-calatoreste.com/tips/start-travel-blog/"
+                title="How to Start a Travel Blog"
+                ><div class="article-block__content">
+                  <article class="article-block__content-link">
+                    <div class="h article-block__title"><span>How to Start a Travel Blog</span></div>
+                  </article>
+                </div><div class="article-block__image">
+                  <div class="article-block__image-link">
+                    <Image
+                      src={'~/assets/images/almadragos.webp'}
+                      class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                      widths={[400, 900]}
+                      width={400}
+                      sizes="(max-width: 900px) 400px, 900px"
+                      alt={'post.title'}
+                      aspectRatio="16:9"
+                      layout="cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div><a
+            href="https://www.alma-calatoreste.com/tips/"
+            title="Discover all tips"
+            class="page-nav__subcontainer-button"
+            >All Travel Tips<svg class="icon icon-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+          >
+        </div><div class="page-nav__subcontainer-content page-nav__subcontainer--planning">
+          <div class="page-nav__subcontainer-tiplist">
+            <strong class="page-nav__sub-continent">
+              <a href="/tips/how-to-plan-trip/"
+                >Plan a trip <svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><div class="page-nav__planning">
+              <div class="page-nav__planning-left">
+                <ul class="page-nav__planning-list planning-list">
+                  <li class="page-nav__planning-item planning-item">
+                    <a
+                      class="planning-link"
+                      href="https://www.alma-calatoreste.com/go/booking/?r="
+                      target="_blank"
+                      title="Find Hotels"
+                      ><div class="salt-icon__container planning-link__icon-container">
+                        <span class="planning-link__link-icon salt-icon salt-icon--hotels"></span>
+                      </div>
+                      <span class="planning-link__label">
+                        Find Hotels <span class="planning-link__sublabel">via Booking.com</span>
+                      </span></a
+                    >
+                  </li><li class="page-nav__planning-item planning-item">
+                    <a
+                      class="planning-link"
+                      href="https://www.alma-calatoreste.com/go/sunnycars/?r="
+                      target="_blank"
+                      title="Find a rental car"
+                      ><div class="salt-icon__container planning-link__icon-container">
+                        <span class="planning-link__link-icon salt-icon salt-icon--transport"></span>
+                      </div>
+                      <span class="planning-link__label">
+                        Find a Rental Car <span class="planning-link__sublabel">via Sunny Cars</span>
+                      </span></a
+                    >
+                  </li><li class="page-nav__planning-item planning-item">
+                    <a
+                      class="planning-link"
+                      href="https://www.alma-calatoreste.com/go/skyscanner/?r="
+                      target="_blank"
+                      title="Find Cheap Flights"
+                      ><div class="salt-icon__container planning-link__icon-container">
+                        <span class="planning-link__link-icon salt-icon salt-icon--flight"></span>
+                      </div>
+                      <span class="planning-link__label">
+                        Find Cheap Flights <span class="planning-link__sublabel">via Skyscanner</span>
+                      </span></a
+                    >
+                  </li><li class="page-nav__planning-item planning-item">
+                    <a
+                      class="planning-link"
+                      href="https://www.alma-calatoreste.com/go/heymondo-travel-insurance/?r="
+                      target="_blank"
+                      title="Get a Travel Insurance"
+                      ><div class="salt-icon__container planning-link__icon-container">
+                        <span class="planning-link__link-icon salt-icon salt-icon--insurance"></span>
+                      </div>
+                      <span class="planning-link__label">
+                        Get a Travel Insurance <span class="planning-link__sublabel">via Heymondo</span>
+                      </span></a
+                    >
+                  </li><li class="page-nav__planning-item planning-item">
+                    <a
+                      class="planning-link"
+                      href="https://www.alma-calatoreste.com/go/viator-tours-aff/?r="
+                      target="_blank"
+                      title="Book Tours & Attractions"
+                      ><div class="salt-icon__container planning-link__icon-container">
+                        <span class="planning-link__link-icon salt-icon salt-icon--tour"></span>
+                      </div>
+                      <span class="planning-link__label">
+                        Book Tours &amp; Attractions <span class="planning-link__sublabel">via Viator</span>
+                      </span></a
+                    >
+                  </li><li class="page-nav__planning-item planning-item">
+                    <a
+                      class="planning-link"
+                      href="https://www.alma-calatoreste.com/go/12go/?r="
+                      target="_blank"
+                      title="Book a Bus or Transfer"
+                      ><div class="salt-icon__container planning-link__icon-container">
+                        <span class="planning-link__link-icon salt-icon salt-icon--attractions"></span>
+                      </div>
+                      <span class="planning-link__label">
+                        Book a Bus/Train/Transfer <span class="planning-link__sublabel">via 12Go</span>
+                      </span></a
+                    >
+                  </li>
+                </ul><a class="planning-learnmore" href="https://www.alma-calatoreste.com/travel-resources/"
+                  >See where we book our travels <svg class="icon icon-arrow"
+                    ><use xlink:href="#icon-arrow-small"></use></svg
+                  ></a
+                >
+              </div><div class="page-nav__planning-right">
+                <div class="page-nav__planning-textarticles">
+                  <a
+                    class="article-text-block"
+                    href="https://www.alma-calatoreste.com/travel-advice/"
+                    title="Personal Travel Advise: Ask us your travel questions directly"
+                    ><div class="article-text-block__image">
+                      <div class="article-text-block__image-link">
+                        <Image
+                          src={'~/assets/images/almadragos.webp'}
+                          class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                          widths={[400, 900]}
+                          width={400}
+                          sizes="(max-width: 900px) 400px, 900px"
+                          alt={'post.title'}
+                          aspectRatio="16:9"
+                          layout="cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div><div class="article-text-block__content">
+                      <article class="article-text-block__content-link">
+                        <div class="h article-text-block__title">
+                          Personal Travel Advise: Ask us your travel questions directly
+                        </div>
+                      </article>
+                    </div></a
+                  >
+                  <a
+                    class="article-text-block"
+                    href="https://www.alma-calatoreste.com/tips/how-to-plan-trip/"
+                    title="How to Plan a Trip: 7 Easy Tips for Your Next Adventure"
+                    ><div class="article-text-block__image">
+                      <div class="article-text-block__image-link">
+                        <Image
+                          src={'~/assets/images/almadragos.webp'}
+                          class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                          widths={[400, 900]}
+                          width={400}
+                          sizes="(max-width: 900px) 400px, 900px"
+                          alt={'post.title'}
+                          aspectRatio="16:9"
+                          layout="cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div><div class="article-text-block__content">
+                      <article class="article-text-block__content-link">
+                        <div class="h article-text-block__title">
+                          How to Plan a Trip: 7 Easy Tips for Your Next Adventure
+                        </div>
+                      </article>
+                    </div></a
+                  >
+                </div><div class="page-nav__planning-articles">
+                  <a
+                    class="article-block"
+                    href="https://www.alma-calatoreste.com/tips/travel-insurance/"
+                    title="Best Travel Insurances in 2024 (COVID-19 coverage)"
+                    ><div class="article-block__content">
+                      <article class="article-block__content-link">
+                        <div class="h article-block__title">
+                          <span>Best Travel Insurances in 2024 (COVID-19 coverage)</span>
+                        </div>
+                      </article>
+                    </div><div class="article-block__image">
+                      <div class="article-block__image-link">
+                        <Image
+                          src={'~/assets/images/almadragos.webp'}
+                          class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                          widths={[400, 900]}
+                          width={400}
+                          sizes="(max-width: 900px) 400px, 900px"
+                          alt={'post.title'}
+                          aspectRatio="16:9"
+                          layout="cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><button class="nav-burger" aria-label="Open mobile menu">
+        <span class="nav-burger__text">
+          <svg class="icon-burger" width="18" height="18"><use xlink:href="#icon-menu"></use></svg>
+        </span>
+        <svg class="icon-close" width="32" height="32"><use xlink:href="#icon-close"></use></svg>
+      </button><button class="post-chapters__trigger" aria-label="Show chapters"
+        ><div class="post-chapters__list-link">
+          <span class="post-chapters__link-label"><div>Chapters</div></span>
+          <svg class="icon button-arrow icon-arrow-small"><use xlink:href="#icon-arrow-small"></use></svg>
+        </div>
+      </button>
+    </nav>
+    <div class="popup" hidden="">
+      <div class="popup__inner">
+        <button class="popup__close"
+          ><svg class="icon icon-close" width="32" height="32"><use xlink:href="#icon-close"></use></svg></button
+        ><div class="popup__content"></div>
+      </div>
+    </div>
+    <footer class="page-foot">
+      <svg width="100%" height="134" class="page-foot__background page-foot__background--desktop">
+        <defs>
+          <pattern
+            id="footer"
+            x="750px"
+            y="0"
+            width="1501"
+            height="134"
+            patternUnits="userSpaceOnUse"
+            viewBox="0 0 3002 268"
+          >
+            <path
+              d="M3001,115.5c-0.2,0-0.3,0.1-0.5,0.1c-63.1,17.3-124.8,40.8-187,61.5c-529,171-1031,45-1139,18l-430-106 c-90-22-180-45-271-60C653.8-26.3,308.7,3.5,3,112.7l-2,0.7l-1,0.4V268h1v0.1h2l2997.5-0.1h0.5h1V115.2L3001,115.5z"
+            ></path>
+          </pattern>
+          <rect id="rect" x="-50%" y="0" width="100%" height="100%" fill="url(#footer)"></rect>
+        </defs>
+        <use class="page-foot__background--desktop" xlink:href="#rect" x="50%" y="0"></use>
+      </svg><svg
+        width="100%"
+        height="134"
+        viewBox="0 0 3002 268"
+        preserveAspectRatio="xMinYMax meet"
+        class="page-foot__background page-foot__background--mobile"
+      >
+        <path
+          d="M3001,115.5c-0.2,0-0.3,0.1-0.5,0.1c-63.1,17.3-124.8,40.8-187,61.5c-529,171-1031,45-1139,18l-430-106 c-90-22-180-45-271-60C653.8-26.3,308.7,3.5,3,112.7l-2,0.7l-1,0.4V268h1v0.1h2l2997.5-0.1h0.5h1V115.2L3001,115.5z"
+        ></path>
+      </svg><div class="page-foot__container">
+        <div class="foot-instagram">
+          <a
+            class="foot-instagram__image"
+            href="https://www.instagram.com/alma-calatoreste/"
+            target="_blank"
+            rel="noopener"
+          >
+            <Image
+              src={'~/assets/images/almadragos.webp'}
+              class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+              widths={[400, 900]}
+              width={400}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt={'post.title'}
+              aspectRatio="16:9"
+              layout="cover"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="foot-instagram__content">
+              <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg><p>
+                Follow our travels daily on Instagram together with 325K others. <svg class="icon icon-arrow"
+                  ><use xlink:href="#icon-arrow"></use></svg
+                >
+              </p>
+            </div>
+          </a>
+        </div><nav class="sitemap" aria-label="Sitemap">
+          <ul class="sitemap__list">
+            <li class="sitemap__list-item">
+              <a class="sitemap__list-title" href="https://www.alma-calatoreste.com/travel-blog/" title="Travel Blogs"
+                >Travel Blogs</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/bali/bali-travel-guide/" title="Bali Travel Guide"
+                >Bali Travel Guide</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/sri-lanka/sri-lanka-route-guide/" title="Sri Lanka Travel Guide"
+                >Sri Lanka Travel Guide</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/peru/peru-travel-guide/" title="Peru Travel Guide"
+                >Peru Travel Guide</a
+              >
+            </li>
+          </ul><ul class="sitemap__list">
+            <li class="sitemap__list-item">
+              <a class="sitemap__list-title" href="https://www.alma-calatoreste.com/tips/" title="Tips & Tricks"
+                >Tips &amp; Tricks</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/tips/start-travel-blog/" title="Start a Travel Blog"
+                >Start a Travel Blog</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/tips/reduce-plastic-travel/" title="Reduce travel plastic"
+                >Reduce travel plastic</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/tips/camera-travel-photography/" title="Our Photography Gear"
+                >Our Photography Gear</a
+              >
+            </li>
+          </ul><ul class="sitemap__list">
+            <li class="sitemap__list-item">
+              <a class="sitemap__list-title" href="https://www.alma-calatoreste.com/about-us/" title="About us">About us</a
+              >
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/about-us/" title="Our story">Our story</a>
+            </li>
+            <li class="sitemap__list-item">
+              <a href="https://www.alma-calatoreste.com/work-with-us/" title="Work with us">Work with us</a>
+            </li>
+          </ul><ul class="sitemap__list">
+            <li class="sitemap__list-item">
+              <a class="sitemap__list-title" href="https://www.alma-calatoreste.com/shop/" title="Shop">Shop</a>
+            </li>
+            <li class="sitemap__list-item">
+              <a href="/shop/presets/" title="Lightroom Presets">Lightroom Presets</a>
+            </li>
+            <li class="sitemap__list-item">
+              <a href="/shop/mobile-video-filters/" title="Video Filters (Mobile)">Video Filters (Mobile)</a>
+            </li>
+            <li class="sitemap__list-item">
+              <a href="/shop/google-maps/" title="Google Maps Locations">Google Maps Locations</a>
+            </li>
+          </ul><ul class="sitemap__list">
+            <li class="sitemap__list-item"><span class="sitemap__list-title">Contact</span></li>
+            <li class="sitemap__list-item">
+              <a href="mailto:ask@alma-calatoreste.com" target="_blank" title="Email us">ask@alma-calatoreste.com</a>
+            </li>
+            <li class="sitemap__list-item">
+              <div class="socials socials--foot">
+                <div class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="https://www.instagram.com/alma-calatoreste/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram Salt in our Hair"
+                  >
+                    <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                  </a>
+                </div><div class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="https://www.youtube.com/c/alma-calatoreste?sub_confirmation=1"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Youtube Salt in our Hair"
+                  >
+                    <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+                  </a>
+                </div><div class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="https://www.pinterest.com/alma-calatoreste/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Pinterest Salt in our Hair"
+                  >
+                    <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+                  </a>
+                </div><div class="socials__item">
+                  <a
+                    class="socials__link"
+                    href="https://www.facebook.com/alma-calatoreste/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook Salt in our Hair"
+                  >
+                    <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav><div class="foot-logo">
+          <a
+            class="foot-logo__link"
+            href="https://www.alma-calatoreste.com/"
+            title="Salt in our Hair Travel Blog"
+            aria-label="Salt in our Hair Travel Blog"
+            ><figure class="foot-logo__image"></figure>
+          </a>
+        </div>
+      </div><div class="copyright">
+        <div class="copyright__text">
+          © <a href="https://www.alma-calatoreste.com" title="Salt in our Hair Travel Blog">Salt in our Hair</a> - <a
+            href="/tips/start-travel-blog/"
+            target="_blank">Website designed &amp; built with ♥ by only us (Nick &amp; Hannah)</a
+          > - <a href="https://www.alma-calatoreste.com/privacy-policy/" target="_blank" title="Privacy" rel="noopener"
+            >Privacy</a
+          > - <a href="https://www.alma-calatoreste.com/sitemap/" target="_blank" title="Sitemap" rel="noopener">Sitemap</a
+          >
+          - Member of Mediavine Travel - <span data-name="mediavine-ccpa-button"
+            >Do Not Sell or Share my Information</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <nav class="destination-dropdown" style="top: 431px;">
+      <div class="page-nav__subcontainer">
+        <div class="page-nav__subcontainer-content page-nav__subcontainer--destinations">
+          <div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/asia/"
+                >Asia<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/bali/" title="Bali"> Bali </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/cambodia/" title="Cambodia">
+                  Cambodia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/georgia/" title="Georgia">
+                  Georgia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/india/" title="India"> India </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/indonesia/" title="Indonesia">
+                  Indonesia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/japan/" title="Japan"> Japan </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/laos/" title="Laos"> Laos </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/malaysia/" title="Malaysia">
+                  Malaysia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/maldives/" title="Maldives">
+                  Maldives
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/myanmar/" title="Myanmar">
+                  Myanmar
+                </a>
+              </li><li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link page-nav__sub-link--small"
+                  href="https://www.alma-calatoreste.com/philippines/"
+                  title="Philippines"
+                >
+                  Philippines
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/singapore/" title="Singapore">
+                  Singapore
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/sri-lanka/" title="Sri Lanka">
+                  Sri Lanka
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/thailand/" title="Thailand">
+                  Thailand
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/turkey/" title="Turkey"> Turkey </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/uzbekistan/" title="Uzbekistan">
+                  Uzbekistan
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/vietnam/" title="Vietnam">
+                  Vietnam
+                </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/africa/"
+                >Africa<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/egypt/" title="Egypt"> Egypt </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/mauritius/" title="Mauritius">
+                  Mauritius
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/morocco/" title="Morocco">
+                  Morocco
+                </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/middle-east/"
+                >Middle East<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/egypt/" title="Egypt"> Egypt </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/jordan/" title="Jordan"> Jordan </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/oman/" title="Oman"> Oman </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/turkey/" title="Turkey"> Turkey </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"
+              ><a href="https://www.alma-calatoreste.com/europe/"
+                >Europe<svg class="icon button-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+              >
+            </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/albania/" title="Albania">
+                  Albania
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/austria/" title="Austria">
+                  Austria
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/bulgaria/" title="Bulgaria">
+                  Bulgaria
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/croatia/" title="Croatia">
+                  Croatia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link page-nav__sub-link--small"
+                  href="https://www.alma-calatoreste.com/czech-republic/"
+                  title="Czech Republic"
+                >
+                  Czech Republic
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/france/" title="France"> France </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/georgia/" title="Georgia">
+                  Georgia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/greece/" title="Greece"> Greece </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/hungary/" title="Hungary">
+                  Hungary
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/iceland/" title="Iceland">
+                  Iceland
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/italy/" title="Italy"> Italy </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/malta/" title="Malta"> Malta </a>
+              </li><li class="page-nav__subitem">
+                <a
+                  class="page-nav__sub-link page-nav__sub-link--small"
+                  href="https://www.alma-calatoreste.com/netherlands/"
+                  title="Netherlands"
+                >
+                  Netherlands
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/poland/" title="Poland"> Poland </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/portugal/" title="Portugal">
+                  Portugal
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/spain/" title="Spain"> Spain </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/turkey/" title="Turkey"> Turkey </a>
+              </li>
+            </ul>
+          </div><div class="page-nav__subcontainer-continent">
+            <strong class="page-nav__sub-continent"> Latin America </strong><ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/colombia/" title="Colombia">
+                  Colombia
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/costa-rica/" title="Costa Rica">
+                  Costa Rica
+                </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/mexico/" title="Mexico"> Mexico </a>
+              </li><li class="page-nav__subitem">
+                <a class="page-nav__sub-link" href="https://www.alma-calatoreste.com/peru/" title="Peru"> Peru </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://www.alma-calatoreste.com/travel-blog/"
+            title="Discover all travel blogs"
+            class="page-nav__subcontainer-button"
+            >All Travel Blogs<svg class="icon icon-arrow"><use xlink:href="#icon-arrow-small"></use></svg></a
+          >
+        </div>
+      </div>
+    </nav>
+    <script>
+      !(function a(s, i, o) {
+        function c(t, e) {
+          if (!i[t]) {
+            if (!s[t]) {
+              var n = 'function' == typeof require && require;
+              if (!e && n) return n(t, !0);
+              if (l) return l(t, !0);
+              throw (((e = new Error("Cannot find module '" + t + "'")).code = 'MODULE_NOT_FOUND'), e);
+            }
+            (n = i[t] = { exports: {} }),
+              s[t][0].call(
+                n.exports,
+                function (e) {
+                  return c(s[t][1][e] || e);
+                },
+                n,
+                n.exports,
+                a,
+                s,
+                i,
+                o
+              );
+          }
+          return i[t].exports;
+        }
+        for (var l = 'function' == typeof require && require, e = 0; e < o.length; e++) c(o[e]);
+        return c;
+      })(
+        {
+          1: [
+            function (e, t, n) {
+              'use strict';
+              var a = i(e('../helpers/navigation-large-submenu')),
+                s = i(e('../helpers/elementInViewport'));
+              function i(e) {
+                return e && e.__esModule ? e : { default: e };
+              }
+              var m = !1;
+              window.addEventListener('scroll', d),
+                document.addEventListener('mousemove', d),
+                document.addEventListener('touchstart touchend', d),
+                (0 < window.pageYOffset ||
+                  document.documentElement.scrollHeight <= window.innerHeight ||
+                  document.body.classList.contains('search-results')) &&
+                  d();
+              e = function () {
+                document.documentElement.classList.remove('no-js'),
+                  setTimeout(d, 3350),
+                  document.documentElement.classList.add('page-head--loaded'),
+                  a.default.navigationEvents();
+                document.querySelectorAll('img[tempsrc]').forEach(function (e) {
+                  var t;
+                  (0, s.default)(e) &&
+                    ((t = e.getAttribute('tempsrc')), e.removeAttribute('tempsrc'), e.setAttribute('src', t));
+                });
+                var e = document.getElementsByClassName('page-nav__link--tips')[0],
+                  t = document.querySelector('.page-nav__link--tips.page-nav__item--topic');
+                e.addEventListener('mouseenter', d),
+                  e.addEventListener('click', d),
+                  t.addEventListener('click', d),
+                  t.addEventListener('click', d),
+                  document.addEventListener('mousemove', d);
+              };
+              if ('function' == typeof e)
+                (document.attachEvent ? 'complete' === document.readyState : 'loading' !== document.readyState)
+                  ? e()
+                  : document.addEventListener('DOMContentLoaded', e, !1);
+              function d() {
+                if (!m) {
+                  document.removeEventListener('mousemove', d),
+                    window.removeEventListener('scroll', d),
+                    document.removeEventListener('touchstart touchend', d),
+                    document.documentElement.classList.add('user-started');
+                  var e = new FontFace(
+                      'written',
+                      "url(https://static.alma-calatoreste.com/build/fonts/SaltWritten.woff2) format('woff2'), url(https://static.alma-calatoreste.com/build/fonts/SaltWritten.woff) format('woff')"
+                    ),
+                    t = new FontFace(
+                      'Montserrat',
+                      "url('https://static.alma-calatoreste.com/build/fonts/montserrat-reg.woff2') format('woff2'), url('https://static.alma-calatoreste.com/build/fonts/montserrat-reg.woff') format('woff')"
+                    ),
+                    n = new FontFace(
+                      'Merriweather',
+                      "url('https://static.alma-calatoreste.com/build/fonts/merriweather.woff2') format('woff2'), url('https://static.alma-calatoreste.com/build/fonts/merriweather.woff') format('woff')"
+                    ),
+                    a = new FontFace(
+                      'Merriweather',
+                      "url('https://static.alma-calatoreste.com/build/fonts/merriweather-900.woff2') format('woff2'), url('https://static.alma-calatoreste.com/build/fonts/merriweather-900.woff') format('woff')",
+                      { weight: 900 }
+                    ),
+                    s = document.body.classList.contains('home'),
+                    i = document.body.classList.contains('category'),
+                    o = document.body.classList.contains('tag');
+                  document.body.classList.contains('post-template-default'),
+                    s ? (v(t), v(e)) : i ? (v(n), v(a)) : (o ? v(t) : (v(t), v(a)), v(e));
+                  for (
+                    var c = document.querySelector('meta[name="ref-slug"]')?.content ,
+                      l = document.querySelectorAll('a[href*="/go/"]'),
+                      r = 0;
+                    r < l.length;
+                    r++
+                  ) {
+                    var u = l[r];
+                    u.href.includes('?');
+                    u.href += '?r=' + c;
+                  }
+                  document.querySelectorAll('script#main-script').length ||
+                    ((s = document.querySelectorAll('script[data-cache]')),
+                    ((i = document.createElement('script')).id = 'main-script'),
+                    (i.src = '/build/scripts/main.min.js?v=' + s[0]?.dataset?.cache),
+                    'www.alma-calatoreste.com' === window.location.hostname &&
+                      (i.src = 'https://static.alma-calatoreste.com/build/scripts/main.min.js?v=' + s[0].dataset.cache),
+                    document.head.appendChild(i)),
+                    (m = !0);
+                }
+              }
+              function v(e) {
+                e.load().then(function (e) {
+                  return document.fonts.add(e), !0;
+                });
+              }
+            },
+            { '../helpers/elementInViewport': 2, '../helpers/navigation-large-submenu': 4 },
+          ],
+          2: [
+            function (e, t, n) {
+              'use strict';
+              function a(e) {
+                return (a =
+                  'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+                    ? function (e) {
+                        return typeof e;
+                      }
+                    : function (e) {
+                        return e && 'function' == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype
+                          ? 'symbol'
+                          : typeof e;
+                      })(e);
+              }
+              Object.defineProperty(n, '__esModule', { value: !0 }),
+                (n.default = void 0),
+                (n.default = function (e) {
+                  var t = 1 < arguments.length && void 0 !== arguments[1] && arguments[1];
+                  if (null != a(e) && null != e)
+                    return (
+                      ((e = e.getBoundingClientRect()).newTop = t
+                        ? e.top - (window.innerHeight || document.documentElement.clientHeight) * t
+                        : e.top),
+                      0 < e.bottom &&
+                        0 < e.right &&
+                        e.left < (window.innerWidth || document.documentElement.clientWidth) &&
+                        e.newTop < (window.innerHeight || document.documentElement.clientHeight)
+                    );
+                });
+            },
+            {},
+          ],
+          3: [
+            function (e, t, n) {
+              'use strict';
+              Object.defineProperty(n, '__esModule', { value: !0 }),
+                (n.default = void 0),
+                (n.default = {
+                  isMobileDevice: function () {
+                    var e = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+                      t = window.matchMedia('only screen and (max-width: 760px)').matches,
+                      n =
+                        'ontouchstart' in document.documentElement ||
+                        0 < navigator.maxTouchPoints ||
+                        0 < navigator.msMaxTouchPoints,
+                      a = /Mobi/i.test(window.navigator.userAgent);
+                    return e || t || n || a;
+                  },
+                });
+            },
+            {},
+          ],
+          4: [
+            function (e, t, n) {
+              'use strict';
+              Object.defineProperty(n, '__esModule', { value: !0 }), (n.default = void 0);
+              var a = (e = e('../helpers/mobile')) && e.__esModule ? e : { default: e };
+              n.default = {
+                navigationEvents: function () {
+                  var n = {
+                    items: document.querySelectorAll(
+                      '.page-nav__list--menu > .page-nav__item, .page-nav__item--search > .page-nav__item'
+                    ),
+                    hasSubmenu: document.getElementsByClassName('page-nav__link--has-submenu'),
+                    submenu: document.getElementsByClassName('page-nav__subcontainer'),
+                    subMouseover: !1,
+                    itemWithSubmenu: !1,
+                    lastScrollY: !1,
+                    mobileSubmenu: !1,
+                    backgroundActive: !1,
+                    lazyloaded: !1,
+                    html: document.getElementsByTagName('html'),
+                    pageNav: document.getElementsByClassName('page-nav'),
+                    init: function () {
+                      n.burgerNav(), n.subNav();
+                    },
+                    burgerNav: function () {
+                      document.getElementsByClassName('nav-burger')[0].addEventListener('click', function () {
+                        n.lazyloaded || (n.menuLazyLoad(), (n.lazyloaded = !0)),
+                          n.html[0].classList.add('page-nav--hasbeenopen'),
+                          n.html[0].classList.toggle('page-nav--active'),
+                          (document.getElementsByClassName('page-nav__container')[0].scrollLeft = 0),
+                          (n.submenu[0].scrollTop = 0),
+                          document.getElementsByClassName('page-nav__list--menu')[0].classList.remove('is-active'),
+                          n.lastScrollY
+                            ? (n.html[0].classList.toggle('page-locked'),
+                              window.scrollTo(0, n.lastScrollY),
+                              (n.lastScrollY = !1))
+                            : ((n.lastScrollY =
+                                void 0 !== window.pageYOffset
+                                  ? window.pageYOffset
+                                  : (document.documentElement || document.body.parentNode || document.body).scrollTop),
+                              n.html[0].classList.toggle('page-locked')),
+                          0 < document.getElementsByClassName('page-nav__item active').length &&
+                            document.getElementsByClassName('page-nav__item active')[0].classList.remove('active');
+                      });
+                    },
+                    subNav: function () {
+                      [].forEach.call(n.items, function (e) {
+                        e.addEventListener('mouseover', function (e) {
+                          var t = this.getElementsByClassName('page-nav__link');
+                          n.lazyloaded || (n.menuLazyLoad(), (n.lazyloaded = !0)),
+                            t.length &&
+                              (this.classList.contains('page-nav__item--home') ||
+                                this.parentNode.classList.contains('page-nav__item--search') ||
+                                n.backgroundActive ||
+                                (document.documentElement.classList.add('page-nav--bg-active'),
+                                (n.backgroundActive = !0)),
+                              t[0].classList.contains('page-nav__link--largesubmenu')
+                                ? (t[0].classList.contains('page-nav__link--destinations') &&
+                                    (e.preventDefault(), n.largeSubmenuNav('destinations')),
+                                  t[0].classList.contains('page-nav__link--tips') &&
+                                    (e.preventDefault(), n.largeSubmenuNav('tips')),
+                                  t[0].classList.contains('page-nav__link--planning') &&
+                                    (e.preventDefault(), n.largeSubmenuNav('planning')))
+                                : n.itemWithSubmenu && (n.closeLargeSubmenuNav(), (n.itemWithSubmenu = !1)));
+                        }),
+                          e.addEventListener('mouseleave', function (e) {
+                            document.documentElement.classList.remove('page-nav--bg-active'),
+                              (n.backgroundActive = !1),
+                              (e.clientY <= 0 ||
+                                e.clientX <= 0 ||
+                                e.clientX >= window.innerWidth ||
+                                e.clientY >= window.innerHeight) &&
+                                n.closeLargeSubmenuNav();
+                          }),
+                          e.addEventListener('click', function (e) {
+                            this.getElementsByClassName('page-nav__link')[0].classList.contains(
+                              'page-nav__link--largesubmenu'
+                            ) && e.preventDefault();
+                            var t = document.querySelector('.page-nav__item.active');
+                            t &&
+                              t != this &&
+                              null !== t &&
+                              (document.querySelector('.page-nav__item.active').classList.remove('active'),
+                              this.classList.remove('active'),
+                              (n.mobileSubmenu = !1)),
+                              e.target.closest('.page-nav__item-subcontainer') ||
+                                (this.classList.contains('active')
+                                  ? (document
+                                      .getElementsByClassName('page-nav__list--menu')[0]
+                                      .classList.remove('active'),
+                                    this.classList.remove('active'),
+                                    (n.mobileSubmenu = !1))
+                                  : (document.getElementsByClassName('page-nav__list--menu')[0].classList.add('active'),
+                                    this.classList.add('active'),
+                                    (n.mobileSubmenu = !0)));
+                          });
+                      }),
+                        [].forEach.call(
+                          document.querySelectorAll('.page-nav__list--maintopic .page-nav__link'),
+                          function (e) {
+                            e.addEventListener('click', function (e) {
+                              this.classList.contains('page-nav__link--largesubmenu') && e.preventDefault(),
+                                this.classList.contains('page-nav__item--topic') &&
+                                  !this.classList.contains('topic-active') &&
+                                  ((e = document.getElementsByClassName('page-nav__item--topic'))[0].classList.remove(
+                                    'topic-active'
+                                  ),
+                                  e[1].classList.remove('topic-active'),
+                                  e[2].classList.remove('topic-active'),
+                                  this.classList.add('topic-active'),
+                                  (n.submenu[0].scrollTop = 0),
+                                  this.classList.contains('page-nav__link--destinations')
+                                    ? (n.html[0].classList.remove('page-nav--topic-tips'),
+                                      n.html[0].classList.remove('page-nav--topic-planning'))
+                                    : this.classList.contains('page-nav__link--tips')
+                                      ? (n.html[0].classList.remove('page-nav--topic-planning'),
+                                        n.html[0].classList.add('page-nav--topic-tips'))
+                                      : this.classList.contains('page-nav__link--planning') &&
+                                        (n.html[0].classList.remove('page-nav--topic-tips'),
+                                        n.html[0].classList.add('page-nav--topic-planning')));
+                            });
+                          }
+                        ),
+                        n.submenu[0].addEventListener('mouseover', function () {
+                          (n.subMouseover = !0),
+                            n.backgroundActive ||
+                              (document.documentElement.classList.add('page-nav--bg-active'),
+                              (n.backgroundActive = !0));
+                        }),
+                        n.submenu[0].addEventListener('mouseleave', function (e) {
+                          n.closeLargeSubmenuNav(),
+                            document.documentElement.classList.remove('page-nav--bg-active'),
+                            (n.backgroundActive = !1);
+                        }),
+                        n.pageNav[0].addEventListener('mouseleave', function () {
+                          document.documentElement.classList.remove(
+                            'page-nav--bg-active',
+                            'page-nav__destinations--active',
+                            'page-nav__tips--active',
+                            'page-nav__planning--active'
+                          );
+                        }),
+                        [].forEach.call(n.hasSubmenu, function (e) {
+                          e.addEventListener('click', function (e) {
+                            if (window.innerWidth < 980) return e.preventDefault(), !1;
+                          });
+                        });
+                    },
+                    largeSubmenuNav: function (e) {
+                      n.itemWithSubmenu != e && n.closeLargeSubmenuNav(),
+                        (n.itemWithSubmenu = e),
+                        document.documentElement.classList.contains('page-nav__' + e + '--active') ||
+                          document.documentElement.classList.add('page-nav__' + e + '--active');
+                    },
+                    closeLargeSubmenuNav: function () {
+                      document.documentElement.classList.remove(
+                        'page-nav__destinations--active',
+                        'page-nav__tips--active',
+                        'page-nav__planning--active'
+                      ),
+                        (n.subMouseover = !1),
+                        n.pageNav[0].classList.contains('page-nav--sticked--active') ||
+                          n.pageNav[0].classList.remove(
+                            'page-nav--small',
+                            'page-nav--sticked',
+                            'page-nav--sticked--visible'
+                          );
+                    },
+                    menuLazyLoad: function () {
+                      n.submenu[0].querySelectorAll('img.menu-lazyload').forEach(function (e) {
+                        e.classList.remove('menu-lazyload'), e.classList.add('lazyload');
+                      });
+                    },
+                  };
+                  document.addEventListener('touchstart', function (e) {
+                    a.default.isMobileDevice() &&
+                      n.pageNav[0].classList.contains('post-chapters--active') &&
+                      !e.target.closest('.post-chapters__list') &&
+                      !e.target.closest('.post-chapters__trigger') &&
+                      (n.pageNav[0].classList.remove('post-chapters--active'),
+                      n.pageNav[0].getElementsByClassName('post-chapters__trigger')[0].classList.add('animate'),
+                      e.preventDefault());
+                  }),
+                    document.addEventListener('click', function (e) {
+                      var t;
+                      e.target.closest('.page-nav__item-sublist') ||
+                        (n.mobileSubmenu
+                          ? (e.target.classList.contains('page-nav__link') && e.target.classList.contains('active')) ||
+                            (document.getElementsByClassName('page-nav__list--menu')[0].classList.remove('active'),
+                            (t = document.querySelectorAll('.page-nav__link--has-submenu.active')).length &&
+                              t[0].classList.remove('active'),
+                            (n.mobileSubmenu = !1))
+                          : !n.pageNav[0].classList.contains('post-chapters--active') ||
+                            e.target.closest('.post-chapters__list') ||
+                            e.target.closest('.post-chapters__trigger') ||
+                            (n.pageNav[0].classList.remove('post-chapters--active'),
+                            (t = n.pageNav[0].getElementsByClassName('post-chapters__trigger')),
+                            a.default.isMobileDevice() && t[0].classList.add('animate'),
+                            e.preventDefault()));
+                    }),
+                    n.init();
+                },
+              };
+            },
+            { '../helpers/mobile': 3 },
+          ],
+        },
+        {},
+        [1]
+      );
+    </script>
+  </div>
+</Layout>

@@ -1,0 +1,44 @@
+---
+import Image from '~/components/common/Image.astro';
+---
+
+<header class="page-head">
+    <div class="page-cover__container">
+      <div class="page-cover blog-bubble-mask">
+        <div class="page-cover__image">
+          <Image
+            src={coverImageSrc}
+            widths={[400, 900]}
+            width={400}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt={postTitle}
+            aspectRatio="16:9"
+            layout="cover"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <div class="home-cover__content">
+        <div class="home-cover__content-container">
+          <div class="salt-icon__container">
+            <span class="planning-link__link-icon salt-icon salt-icon--shaka"></span>
+          </div>
+          <p>
+            <em>{introText}</em>
+          </p>
+          <div class="destination-text">
+            <p>
+              <em>{destinationText}</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-head__container">
+      <div class="logo__container">
+        <a href="https://www.alma-calatoreste.com/" title="Salt in our Hair Travel Blog" class="logo"></a>
+        <span class="logo logo--shadow"></span>
+      </div>
+    </div>
+  </header>

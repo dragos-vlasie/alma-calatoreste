@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  repo: https://github.com/dragos-vlasie/alma-calatoreste
 
 media_folder: 'src/assets/images'
 public_folder: '/_astro'

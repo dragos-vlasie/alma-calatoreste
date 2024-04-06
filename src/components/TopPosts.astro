@@ -1,0 +1,42 @@
+---
+import Image from '~/components/common/Image.astro';
+
+const {postsData} = Astro.props
+
+---
+<section class="top-posts">
+    {postsData.slice(0, 3).map((post) => (
+      <a
+        class="article-block article-block--wcat"
+        href={post.url}
+        title={post.title}
+      >
+        <div class="article-block__content">
+          <div class="salt-icon__container">
+            <span class={`planning-link__link-icon salt-icon salt-icon--${post.icon}`}></span>
+          </div>
+          <article class="article-block__content-link">
+            <h5>{post.category}</h5>
+            <h2 class="article-block__title">{post.title}</h2>
+          </article>
+        </div>
+        <div class="article-block__image">
+          <div class="article-block__image-link">
+            <Image
+              src={post.imageSrc}
+              class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+              widths={[400, 900]}
+              width={400}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt={post.title}
+              aspectRatio="16:9"
+              layout="cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </a>
+    ))}
+  </section>
+  

@@ -1,0 +1,41 @@
+---
+import Image from '~/components/common/Image.astro';
+
+
+const {
+    mobileTitle,
+    whereTo,
+    next,
+    links
+} = Astro.props;
+---
+<section class="wheretonext">
+    <div class="wheretonext__container">
+      <div class="visible-mobile wheretonext__mtitle">{mobileTitle}</div>
+      <ul class="wheretonext__list lazyload-scrollx">
+        <li class="wheretonext__title-container visible-desktop">
+          <div class="wheretonext__title">{whereTo}</div>
+          <div class="wheretonext__title wheretonext__title--l">{next}</div>
+        </li>
+        {links.map(link => (
+        <li class="page-nav__subitem">
+          <a class="page-nav__sub-link" href={link.url} title={link.title}>
+            <Image
+            src={link.imageSrc}
+            class="wheretonext__link-img"
+            widths={[300, 200]}
+            width={44}
+            sizes="(max-width: 900px) 44px, 44px"
+            alt={link.title}
+            layout="cover"
+            loading="lazy"
+            decoding="async"
+          />
+            {link.title}
+          </a>
+        </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  

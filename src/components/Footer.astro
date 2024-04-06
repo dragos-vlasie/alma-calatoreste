@@ -1,0 +1,224 @@
+---
+import Image from "./common/Image.astro";
+---
+
+<footer class="page-foot">
+    <svg width="100%" height="134" class="page-foot__background page-foot__background--desktop">
+      <defs>
+        <pattern
+          id="footer"
+          x="750px"
+          y="0"
+          width="1501"
+          height="134"
+          patternUnits="userSpaceOnUse"
+          viewBox="0 0 3002 268"
+        >
+          <path
+            d="M3001,115.5c-0.2,0-0.3,0.1-0.5,0.1c-63.1,17.3-124.8,40.8-187,61.5c-529,171-1031,45-1139,18l-430-106 c-90-22-180-45-271-60C653.8-26.3,308.7,3.5,3,112.7l-2,0.7l-1,0.4V268h1v0.1h2l2997.5-0.1h0.5h1V115.2L3001,115.5z"
+          ></path>
+        </pattern>
+        <rect id="rect" x="-50%" y="0" width="100%" height="100%" fill="url(#footer)"></rect>
+      </defs>
+      <use class="page-foot__background--desktop" xlink:href="#rect" x="50%" y="0"></use>
+    </svg>
+    <svg
+      width="100%"
+      height="134"
+      viewBox="0 0 3002 268"
+      preserveAspectRatio="xMinYMax meet"
+      class="page-foot__background page-foot__background--mobile"
+    >
+      <path
+        d="M3001,115.5c-0.2,0-0.3,0.1-0.5,0.1c-63.1,17.3-124.8,40.8-187,61.5c-529,171-1031,45-1139,18l-430-106 c-90-22-180-45-271-60C653.8-26.3,308.7,3.5,3,112.7l-2,0.7l-1,0.4V268h1v0.1h2l2997.5-0.1h0.5h1V115.2L3001,115.5z"
+      ></path>
+    </svg>
+    <div class="page-foot__container">
+      <div class="foot-instagram">
+        <a
+          class="foot-instagram__image"
+          href="https://www.instagram.com/alma-calatoreste/"
+          target="_blank"
+          rel="noopener"
+        >
+          <Image
+            src={'~/assets/images/almadragos.webp'}
+            class="w-full md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+            widths={[400, 900]}
+            width={400}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt={'post.title'}
+            aspectRatio="16:9"
+            layout="cover"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="foot-instagram__content">
+            <svg class="icon icon-instagram">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <p>
+              Follow our travels daily on Instagram together with 325K others.
+              <svg class="icon icon-arrow">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </p>
+          </div>
+        </a>
+      </div>
+      <nav class="sitemap" aria-label="Sitemap">
+        <ul class="sitemap__list">
+          <li class="sitemap__list-item">
+            <a class="sitemap__list-title" href="/travel-blog/" title="Travel Blogs"
+              >Travel Blogs</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/bali/bali-travel-guide/" title="Bali Travel Guide"
+              >Bali Travel Guide</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/sri-lanka/sri-lanka-route-guide/" title="Sri Lanka Travel Guide"
+              >Sri Lanka Travel Guide</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/peru/peru-travel-guide/" title="Peru Travel Guide"
+              >Peru Travel Guide</a
+            >
+          </li>
+        </ul>
+        <ul class="sitemap__list">
+          <li class="sitemap__list-item">
+            <a class="sitemap__list-title" href="/tips/" title="Tips & Tricks"
+              >Tips & Tricks</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/tips/start-travel-blog/" title="Start a Travel Blog"
+              >Start a Travel Blog</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/tips/reduce-plastic-travel/" title="Reduce travel plastic"
+              >Reduce travel plastic</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/tips/camera-travel-photography/" title="Our Photography Gear"
+              >Our Photography Gear</a
+            >
+          </li>
+        </ul>
+        <ul class="sitemap__list">
+          <li class="sitemap__list-item">
+            <a class="sitemap__list-title" href="/about-us/" title="About us"
+              >About us</a
+            >
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/about-us/" title="Our story">Our story</a>
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/work-with-us/" title="Work with us">Work with us</a>
+          </li>
+        </ul>
+        <ul class="sitemap__list">
+          <li class="sitemap__list-item">
+            <a class="sitemap__list-title" href="/shop/" title="Shop">Shop</a>
+          </li>
+          <li class="sitemap__list-item"><a href="/shop/presets/" title="Lightroom Presets">Lightroom Presets</a></li>
+          <li class="sitemap__list-item">
+            <a href="/shop/mobile-video-filters/" title="Video Filters (Mobile)">Video Filters (Mobile)</a>
+          </li>
+          <li class="sitemap__list-item">
+            <a href="/shop/google-maps/" title="Google Maps Locations">Google Maps Locations</a>
+          </li>
+        </ul>
+        <ul class="sitemap__list">
+          <li class="sitemap__list-item"><span class="sitemap__list-title">Contact</span></li>
+          <li class="sitemap__list-item">
+            <a href="mailto:ask@alma-calatoreste.com" target="_blank" title="Email us">ask@alma-calatoreste.com</a>
+          </li>
+          <li class="sitemap__list-item">
+            <div class="socials socials--foot">
+              <div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.instagram.com/alma-calatoreste/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram Alma Calatoreste"
+                >
+                  <svg class="icon icon-instagram">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.youtube.com/c/alma-calatoreste?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Youtube Alma Calatoreste"
+                >
+                  <svg class="icon icon-youtube">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.pinterest.com/alma-calatoreste/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Pinterest Alma Calatoreste"
+                >
+                  <svg class="icon icon-pinterest">
+                    <use xlink:href="#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="socials__item">
+                <a
+                  class="socials__link"
+                  href="https://www.facebook.com/alma-calatoreste/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook Alma Calatoreste"
+                >
+                  <svg class="icon icon-facebook">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="foot-logo">
+        <a
+          class="foot-logo__link"
+          href="/"
+          title="Alma Calatoreste Travel Blog"
+          aria-label="Alma Calatoreste Travel Blog"
+        >
+          <figure class="foot-logo__image"></figure>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="copyright__text">
+        © <a href="/" title="Alma Calatoreste Travel Blog">Alma Calatoreste</a>- <a
+          href="/tips/start-travel-blog/"
+          target="_blank"></a
+        >- <a href="/privacy-policy/" target="_blank" title="Privacy" rel="noopener"
+          >Privacy</a
+        >
+        
+      </div>
+    </div>
+  </footer>

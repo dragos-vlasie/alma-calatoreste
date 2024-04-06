@@ -67,11 +67,11 @@ const postCollection = defineCollection({
 const pageCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    excerpt: z.string(),
+    excerpt: z.string().optional(),
     coverImageSrc: z.string().optional(),
-    imageAlt: z.string(),
-    introText: z.string(),
-    destinationText: z.string(),
+    imageAlt: z.string().optional(),
+    introText: z.string().optional(),
+    destinationText: z.string().optional(),
 
     metadata: metadataDefinition(),
   }),

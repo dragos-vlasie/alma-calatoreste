@@ -63,6 +63,21 @@ const postCollection = defineCollection({
   }),
 });
 
+
+const pageCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    excerpt: z.string(),
+    coverImageSrc: z.string().optional(),
+    imageAlt: z.string(),
+    introText: z.string(),
+    destinationText: z.string(),
+
+    metadata: metadataDefinition(),
+  }),
+});
+
 export const collections = {
   post: postCollection,
+  page: pageCollection
 };

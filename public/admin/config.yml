@@ -34,8 +34,9 @@ collections:
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
       - { label: 'Cover Image Source', name: 'coverImageSrc', widget: 'image' } # Assuming you use an image widget for cover images
-      - { label: 'Post Title', name: 'postTitle', widget: 'string' }
+      - { label: 'Post Title', name: 'imageAlt', widget: 'string' }
       - { label: 'Intro Text', name: 'introText', widget: 'text' } # You can use a text widget for short descriptions
       - { label: 'Destination Text', name: 'destinationText', widget: 'text' }
       - { label: 'Content', name: 'body', widget: 'markdown' }

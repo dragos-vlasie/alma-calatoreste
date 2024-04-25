@@ -5,6 +5,7 @@ export interface Page {
     id: string;
     slug: string;
     title: string;
+    permalink :string; 
     excerpt : string
     coverImageSrc : ImageMetadata | string;
   metadata?: MetaData;

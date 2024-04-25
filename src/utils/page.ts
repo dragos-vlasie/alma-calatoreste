@@ -12,9 +12,9 @@ import type { Page } from '~/types'; // Assuming you have a Page type defined
 //   // Implement your normalization logic for pages here
 // };
 
-const loadPages = async function (): Promise<Array<Page>> {
+const loadPages = async function (): Promise<any> {
   const pages = await getCollection('page');
-  const normalizedPages = pages.map(async (page) => await getNormalizedPage(page));
+  const normalizedPages = pages.map(async (page) => await page);
   return await Promise.all(normalizedPages);
 };
 
@@ -30,4 +30,14 @@ export const fetchPages = async (): Promise<Array<Page>> => {
 export const findPageBySlug = async (slug: string): Promise<Page | undefined> => {
   const pages = await fetchPages();
   return pages.find((page) => page.slug === slug);
+};
+
+/** */
+export const getStaticPathsPage = async () => {
+  return (await fetchPages()).flatMap((page) => ({
+    params: {
+      blog: page.permalink,
+    },
+    props: { page },
+  }));
 };

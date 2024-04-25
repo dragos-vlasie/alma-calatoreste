@@ -17,11 +17,19 @@ import Image from '~/components/common/Image.astro';
 import TopPosts from '~/components/TopPosts.astro';
 import WhereToNext from '~/components/WhereToNext.astro';
 import Footer from '~/components/Footer.astro';
+import { getStaticPathsPage } from '~/utils/page';
+// import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
+import type { GetStaticPaths } from 'astro';
 
 const metadata = {
   title: 'Alma Calatoreste',
   ignoreTitleTemplate: true,
 };
+
+const pages = await Astro.glob('../content/page/*.md');
+console.log("🚀🚀🚀🚀🚀🚀 ~ pages:", pages[0].frontmatter)
+
+const homePage = pages[0].frontmatter
 const whereToNext = {
   mobileTitle: "Where to next?",
   whereTo: "Where to",
@@ -72,11 +80,11 @@ const whereToNext = {
     <Header
       coverImageSrc="~/assets/images/almadragos.webp"
       ,
-      imageAlt="test"
+      imageAlt={homePage.postTitle}
       ,
-      introText="Hi, we’re Dragos & Alma from Drqgos and alma number 1 "
+      introText={homePage.introText}
       ,
-      destinationText="Hi, we’re Dragos & Alma from Drqgos and alma number 1 "
+      destinationText={homePage.destinationText}
       ,
       isHome={true}
     />
